@@ -11,6 +11,7 @@ class Footer extends React.Component {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white"; 
     document.body.style.fontWeight = "900"; 
+    console.log(document.body.style)
   }
 
 
@@ -18,6 +19,13 @@ class Footer extends React.Component {
     document.body.style.backgroundColor = "";
     document.body.style.color = ""; 
     document.body.style.fontWeight = ""; 
+  }
+
+  changeThemeLight = () => {
+    document.body.style.backgroundColor = "#d5e2f8";
+    document.body.style.color = "black"; 
+    document.body.style.fontWeight = "900"; 
+    console.log(document.body.style)
   }
 
   handleClickIncrease = () => {
@@ -100,7 +108,7 @@ class Footer extends React.Component {
             </Col>
             <Col size="lg-4">
               <div className="theme">
-                <button className="increase-size" onClick={this.changeThemeDark}>Dark Theme</button>
+                <button className="increase-size" onClick={this.changeThemeLight}>Light Blue Theme</button>
                   <p className="text-center">Color Change</p>
                 <button className="decrease-size">-</button>
               </div>
