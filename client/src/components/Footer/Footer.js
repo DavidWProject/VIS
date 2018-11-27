@@ -93,7 +93,7 @@ class Footer extends React.Component {
             </Col>
             <Col size="lg-4">
               <div className="theme">
-                <button className="increase-size" onClick={this.changeThemeDark}>Dark Theme</button>
+                <button className="increase-size" onClick={this.changeThemeDark}>Dark Mode</button>
                   <p className="text-center">Color Change</p>
                 <button className="decrease-size" onClick={this.revertDefault}>Default Layout</button>
               </div>
