@@ -1,9 +1,5 @@
-.navbar {
-  border-radius: 0;
-  padding: 20px;
-  box-shadow: 0 1px rgba(0,0,0,0.3) !important; 
-}
-
-.navbar-brand {
+.header-top {
   font-size: 50px;
+  padding: 20px; 
+  box-shadow: 0 1px rgba(0,0,0,0.3) !important;
 }

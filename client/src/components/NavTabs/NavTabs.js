@@ -8,8 +8,8 @@ const NavTabs = () => (
     <Row>
       <Col size="lg-12">
         <ul className="nav nav-tabs">
-          <Col size="lg-3">
-            <li className="nav-item">
+          
+            <li className="nav-item col-lg-3">
               <Link
                 to="/"
                 className={
@@ -19,43 +19,40 @@ const NavTabs = () => (
                 Home
               </Link>
             </li>
-          </Col>
-          <Col size="lg-3">
-            <li className="nav-item">
+          
+            <li className="nav-item col-lg-3">
               <Link
                 to="/about"
                 className={
                   window.location.pathname === "/about" ? "nav-link active" : "nav-link"
                 }
               >
-                About
+                Employment
               </Link>
             </li>
-          </Col>
-          <Col size="lg-3">
-            <li className="nav-item">
+    
+            <li className="nav-item col-lg-3">
               <Link
                 to="/blog"
                 className={
                   window.location.pathname === "/blog" ? "nav-link active" : "nav-link"
                 }
               >
-                Blog
+                Developers
               </Link>
             </li>
-          </Col>
-          <Col size="lg-3">
-          <li className="nav-item">
+      
+          <li className="nav-item col-lg-3">
             <Link
               to="/contact"
               className={
                 window.location.pathname === "/contact" ? "nav-link active" : "nav-link"
               }
             >
-              Contact
+                Resources
             </Link>
           </li>
-          </Col>
+        
           {/* <li className="nav-item">
             <Link
               to="/contact/learn"

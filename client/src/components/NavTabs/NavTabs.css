@@ -1,4 +1,11 @@
 .nav-item {
   font-size: 36px; 
   text-align: center;
+  width: auto;
+  overflow: auto;
+
+}
+
+.nav-tabs {
+  width: 100%;
 }

@@ -2,7 +2,8 @@ import React from "react";
 
 const Blog = () => (
   <div>
-    <h1>Blog Page</h1>
+    <meta name="Developer's Resource" content="This is where developers can create a more friendly website for the visually impaired."></meta>
+    <h1>Developers</h1>
     <p>
       Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
       turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.

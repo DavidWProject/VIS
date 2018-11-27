@@ -4,6 +4,8 @@ import Jumbotron from "../../components/Jumbotron";
 
 const NoMatch = () => (
   <Container fluid>
+    <meta name="Page not found" content="I'm sorry for the inconvience, No matches found or error in the page."></meta>
+
     <Row>
       <Col size="md-12">
         <Jumbotron>

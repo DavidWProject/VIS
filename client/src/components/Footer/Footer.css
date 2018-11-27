@@ -1,0 +1,31 @@
+.increase-size {
+    font-weight: 900;
+    font-size: 25px; 
+    border-radius: 16px;
+    width: 100%;
+}
+
+.decrease-size {
+    font-weight: 900;
+    font-size: 25px; 
+    border-radius: 16px;
+    width: 100%;
+}
+
+.text-center {
+    padding: 2% 0px 2% 0px;
+    margin: auto;
+}
+
+footer {
+    padding-top: 100px; 
+}
+
+.github {
+    padding: 20px; 
+    text-align: center; 
+}
+
+.theme {
+    padding-top: 20px;
+}
