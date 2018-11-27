@@ -8,8 +8,16 @@ import { Col, Row, Container } from "../../components/Grid";
 class Footer extends React.Component {
   
   changeThemeDark = () => {
-    document.body.style.backgroundColor = "yellow";
-    document.body.style.color = "red"; 
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white"; 
+    document.body.style.fontWeight = "900"; 
+  }
+
+
+  revertDefault = () => {
+    document.body.style.backgroundColor = "";
+    document.body.style.color = ""; 
+    document.body.style.fontWeight = ""; 
   }
 
   handleClickIncrease = () => {
@@ -70,6 +78,7 @@ class Footer extends React.Component {
     }   
   }
 
+
   render() {
     return (
       <Container>
@@ -86,7 +95,7 @@ class Footer extends React.Component {
               <div className="theme">
                 <button className="increase-size" onClick={this.changeThemeDark}>Dark Theme</button>
                   <p className="text-center">Color Change</p>
-                <button className="decrease-size">-</button>
+                <button className="decrease-size" onClick={this.revertDefault}>Default Layout</button>
               </div>
             </Col>
             <Col size="lg-4">
@@ -100,9 +109,9 @@ class Footer extends React.Component {
           <Row>
           <Col size="lg-12">
             
-            <p>
+            <h3>
               <i className="fa fa-github-square github" aria-hidden="true"> Proudly built using React.js</i>
-            </p>
+            </h3>
           </Col>
           </Row>
         </footer>
