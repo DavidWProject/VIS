@@ -29,10 +29,10 @@ app.use(enforce.HTTPS(routes));
 // );
 
 // Start the API server
-// app.listen(PORT, () =>
-//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
-// );
-
-http.createServer(app).listen(app.get('port'), function() {
+app.listen(PORT, () =>
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
-});
+);
+
+// http.createServer(app).listen(app.get('port'), function() {
+//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
+// });
