@@ -8,59 +8,88 @@ import { Col, Row, Container } from "../../components/Grid";
 class Footer extends React.Component {
   
   changeThemeDark = () => {
+    var active = document.getElementsByClassName("active"); 
+    var navlink = document.getElementsByClassName("nav-link"); 
+    var navTabs = document.getElementsByTagName("a");
+
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white"; 
     document.body.style.fontWeight = "900"; 
-    console.log(document.body.style)
+    active[0].style.backgroundColor = "black"; 
+    active[0].style.color = "white";
+
+    for (var i = 0; i < navTabs.length; i++) {
+      navTabs[i].style.color = "white";
+    }
+
   }
 
 
   revertDefault = () => {
+    var active = document.getElementsByClassName("active"); 
+    var navlink = document.getElementsByClassName("nav-link"); 
+    var navTabs = document.getElementsByTagName("a");
+
     document.body.style.backgroundColor = "";
     document.body.style.color = ""; 
     document.body.style.fontWeight = ""; 
+    active[0].style.backgroundColor = ""; 
+    active[0].style.color = "";
+
+    for (var i = 0; i < navTabs.length; i++) {
+      navTabs[i].style.color = "";
+    }
   }
 
   changeThemeLight = () => {
+    var active = document.getElementsByClassName("active"); 
+    var navlink = document.getElementsByClassName("nav-link"); 
+    var navTabs = document.getElementsByTagName("a");
+
     document.body.style.backgroundColor = "#d5e2f8";
     document.body.style.color = "black"; 
     document.body.style.fontWeight = "900"; 
-    console.log(document.body.style)
+    active[0].style.backgroundColor = "#d5e2f8";
+    active[0].style.color = "black"; 
+
+
+    for (var i = 0; i < navTabs.length; i++) {
+      navTabs[i].style.color = "black";
+    }
+  }
+
+  changeThemeYellow = () => {
+    var navTabs = document.getElementsByTagName("a");
+    var active = document.getElementsByClassName("active");
+    var navlink = document.getElementsByClassName("nav-link"); 
+
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "yellow"; 
+    document.body.style.fontWeight = "900"; 
+    active[0].style.backgroundColor = "black"; 
+    active[0].style.color = "black"; 
+    
+    for (var i = 0; i < navTabs.length; i++) {
+      navTabs[i].style.color = "yellow";
+    }
   }
 
   handleClickIncrease = () => {
-    // if (document.body.style.zoom = "") {
-    //   document.body.style.zoom = "120%";
-    //   console.log("1");
-    //   return;
-    // }
-
-    // if (document.body.style.zoom = "90%") {
-    //   document.body.style.zoom = "100%"
-    //   console.log("2");
-    //   return;
-    // }
-
     switch(document.body.style.zoom) {
       case "":
         document.body.style.zoom = "120%";
-        console.log("1");
         break;
       case "120%":
         document.body.style.zoom = "140%";
-        console.log("2");
         break;
       case "80%":
         document.body.style.zoom = "90%";
-        console.log("3");
         break;
       case "90%":
         document.body.style.zoom = "100%";
-        console.log("4");
         break;
       case "100%":
         document.body.style.zoom = "120%";
-        console.log("5");
         break;
     }
   }
@@ -69,19 +98,15 @@ class Footer extends React.Component {
     switch(document.body.style.zoom) {
       case "":
         document.body.style.zoom = "90%";
-        console.log("1");
         break;
       case "90%":
         document.body.style.zoom = "80%";
-        console.log("2");
         break;
       case "120%":
         document.body.style.zoom = "100%";
-        console.log("3");
         break;
       case "140%":
         document.body.style.zoom = "120%";
-        console.log("4");
         break;
     }   
   }
@@ -110,7 +135,7 @@ class Footer extends React.Component {
               <div className="theme">
                 <button className="increase-size" onClick={this.changeThemeLight}>Light Blue Theme</button>
                   <p className="text-center">Color Change</p>
-                <button className="decrease-size">-</button>
+                <button className="decrease-size" onClick={this.changeThemeYellow}>Dark Yellow Theme</button>
               </div>
             </Col>
           </Row>
