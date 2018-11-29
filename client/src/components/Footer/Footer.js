@@ -102,6 +102,9 @@ class Footer extends React.Component {
       case "90%":
         document.body.style.zoom = "80%";
         break;
+      case "100%":
+        document.body.style.zoom = "90%";
+        break;
       case "120%":
         document.body.style.zoom = "100%";
         break;
