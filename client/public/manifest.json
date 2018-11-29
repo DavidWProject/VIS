@@ -21,6 +21,11 @@
       "src": "loading512.png",
       "sizes": "512×512",
       "type": "image/png"
+    },
+    {
+      "src": "loading800.png",
+      "sizes": "800×800",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
