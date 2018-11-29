@@ -4,12 +4,13 @@
   "icons": [
     {
       "src": "icon-manifest.png",
-      "sizes": "696 × 800",
+      "sizes": "209 × 241",
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "orientation": "portrait",
+  "theme_color": "#5FAAE5",
   "background_color": "#ffffff"
 }
