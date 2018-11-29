@@ -1,10 +1,10 @@
 {
-  "short_name": "React Google Books Search",
-  "name": "React Google Books Search",
+  "short_name": "VIS",
+  "name": "Visually Impaired Services",
   "icons": [
     {
-      "src": "https://1.bp.blogspot.com/-yIhXlQfYN1E/WMksG192LLI/AAAAAAAAA9w/txsqdQfykVksDEFshayeN54c0Gu6C3AAwCLcB/s1600/glow.gif",
-      "sizes": "1400x1050",
+      "src": "icon-manifest.png",
+      "sizes": "696 × 800",
       "type": "image/png"
     }
   ],
