@@ -11,6 +11,16 @@
       "src": "icon-manifest_144.png",
       "sizes": "144×144",
       "type": "image/png"
+    },
+    {
+      "src": "icon256.png",
+      "sizes": "256×256",
+      "type": "image/png"
+    },
+    {
+      "src": "loading512.png",
+      "sizes": "512×512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
