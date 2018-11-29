@@ -3,17 +3,17 @@
   "name": "Visually Impaired Services",
   "icons": [
     {
-      "src": "/public/icon-manifest.png",
+      "src": "icon-manifest.png",
       "sizes": "209×241",
       "type": "image/png"
     },
     {
-      "src": "/public/icon-manifest_144.png",
+      "src": "icon-manifest_144.png",
       "sizes": "144×144",
       "type": "image/png"
     }
   ],
-  "start_url": "https://v-i-s.herokuapp.com/",
+  "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#5FAAE5",
