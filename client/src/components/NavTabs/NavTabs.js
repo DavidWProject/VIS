@@ -22,9 +22,9 @@ const NavTabs = () => (
           
             <li className="nav-item col-lg-3">
               <Link
-                to="/about"
+                to="/employment"
                 className={
-                  window.location.pathname === "/about" ? "nav-link active" : "nav-link"
+                  window.location.pathname === "/employment" ? "nav-link active" : "nav-link"
                 }
               >
                 Employment
@@ -33,9 +33,9 @@ const NavTabs = () => (
     
             <li className="nav-item col-lg-3">
               <Link
-                to="/blog"
+                to="/developer"
                 className={
-                  window.location.pathname === "/blog" ? "nav-link active" : "nav-link"
+                  window.location.pathname === "/developer" ? "nav-link active" : "nav-link"
                 }
               >
                 Developers
@@ -44,9 +44,9 @@ const NavTabs = () => (
       
           <li className="nav-item col-lg-3">
             <Link
-              to="/contact"
+              to="/resource"
               className={
-                window.location.pathname === "/contact" ? "nav-link active" : "nav-link"
+                window.location.pathname === "/resource" ? "nav-link active" : "nav-link"
               }
             >
                 Resources

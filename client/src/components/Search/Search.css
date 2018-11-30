@@ -1,0 +1,15 @@
+.inputField {
+    width: 100%; 
+    border-radius: 20px; 
+    letter-spacing: 1px; 
+    padding: 10px; 
+    font-size: 24px !important; 
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input[type=text] {
+    padding-left: 30px; 
+}
