@@ -89,9 +89,9 @@ class Search extends React.Component {
 
         axios.get(`https://jobs.search.gov/jobs/search.json?query=` + this.state.search)
             .then(res => {
-                
-                console.log(posts)
+            
                 const posts = res.data; 
+                console.log(posts);
                 // Transform the raw data by extracting the nested posts
                 // Update state to trigger a re-render.
                 // Clear any errors, and turn off the loading indiciator.
@@ -133,10 +133,11 @@ class Search extends React.Component {
   
         return (
             <div>
+            {this.state.location}; 
             {this.state.posts.map(post =>
                 <a href={post.url} target="_blank" key={post.id}>
                     <div className="listings">
-                        <p className="listingDetails">Job Title: {post.position_title} </p>
+                        <p className="listingDetails">Job Title: {post.position_title}</p>
                         <p className="listingDetails">Date Posted: {post.start_date} </p>
                         <p className="listingDetails">Expires: {post.end_date} </p>
                     </div>
