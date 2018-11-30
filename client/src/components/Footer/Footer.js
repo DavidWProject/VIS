@@ -11,6 +11,7 @@ class Footer extends React.Component {
     var active = document.getElementsByClassName("active"); 
     var navlink = document.getElementsByClassName("nav-link"); 
     var navTabs = document.getElementsByTagName("a");
+    var card = document.getElementsByClassName("card-body"); 
 
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white"; 
@@ -22,6 +23,9 @@ class Footer extends React.Component {
       navTabs[i].style.color = "white";
     }
 
+    for (var i = 0; i< card.length; i++) {
+      card[i].style.backgroundColor = "black"; 
+    }
   }
 
 
@@ -29,6 +33,7 @@ class Footer extends React.Component {
     var active = document.getElementsByClassName("active"); 
     var navlink = document.getElementsByClassName("nav-link"); 
     var navTabs = document.getElementsByTagName("a");
+    var card = document.getElementsByClassName("card-body"); 
 
     document.body.style.backgroundColor = "";
     document.body.style.color = ""; 
@@ -39,12 +44,17 @@ class Footer extends React.Component {
     for (var i = 0; i < navTabs.length; i++) {
       navTabs[i].style.color = "";
     }
+
+    for (var i = 0; i< card.length; i++) {
+      card[i].style.backgroundColor = ""; 
+    }
   }
 
   changeThemeLight = () => {
     var active = document.getElementsByClassName("active"); 
     var navlink = document.getElementsByClassName("nav-link"); 
     var navTabs = document.getElementsByTagName("a");
+    var card = document.getElementsByClassName("card-body"); 
 
     document.body.style.backgroundColor = "#d5e2f8";
     document.body.style.color = "black"; 
@@ -56,12 +66,17 @@ class Footer extends React.Component {
     for (var i = 0; i < navTabs.length; i++) {
       navTabs[i].style.color = "black";
     }
+
+    for (var i = 0; i< card.length; i++) {
+      card[i].style.backgroundColor = "#d5e2f8"; 
+    }
   }
 
   changeThemeYellow = () => {
     var navTabs = document.getElementsByTagName("a");
     var active = document.getElementsByClassName("active");
     var navlink = document.getElementsByClassName("nav-link"); 
+    var card = document.getElementsByClassName("card-body"); 
 
     document.body.style.backgroundColor = "black";
     document.body.style.color = "yellow"; 
@@ -71,6 +86,10 @@ class Footer extends React.Component {
     
     for (var i = 0; i < navTabs.length; i++) {
       navTabs[i].style.color = "yellow";
+    }
+
+    for (var i = 0; i< card.length; i++) {
+      card[i].style.backgroundColor = "black"; 
     }
   }
 
