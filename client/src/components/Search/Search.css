@@ -13,3 +13,36 @@ textarea:focus, input:focus{
 input[type=text] {
     padding-left: 30px; 
 }
+
+.searchField {
+    width: 100%; 
+    border-radius: 20px; 
+    letter-spacing: 1px; 
+    padding: 1px; 
+    font-size: 24px !important;
+    margin-top: 15px; 
+}
+
+.noListings {
+    padding: 20px; 
+    font-size: 24px; 
+}
+
+.listings {
+    padding: 5px; 
+    font-size: 20px; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+    font-weight: 500; 
+    margin: 5px; 
+}
+
+#results {
+    padding-top: 10px; 
+}
+
+.listingDetails {
+    font-size: 20px; 
+    color: black; 
+    padding-left: 10px; 
+}
