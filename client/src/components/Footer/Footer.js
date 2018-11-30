@@ -114,27 +114,71 @@ class Footer extends React.Component {
     }   
   }
 
+  handleFontIncrease = () => {
+    var fontSizeP = document.getElementsByTagName("p");
+    for (var i = 0; i < fontSizeP.length; i++) {
+      if (fontSizeP[i].style.fontSize === "") {
+        fontSizeP[i].style.fontSize = "24px"
+        
+      } else if (fontSizeP[i].style.fontSize === "24px") {
+        fontSizeP[i].style.fontSize = "30px"
+        
+      } else if (fontSizeP[i].style.fontSize === "30px") {
+        fontSizeP[i].style.fontSize = "36px"
+         
+      } else if (fontSizeP[i].style.fontSize === "18px") {
+        fontSizeP[i].style.fontSize = "24px"
+      }
+    }
+  } 
+
+
+  handleFontDecrease = () => {
+    var fontSizeP = document.getElementsByTagName("p");
+    for (var i = 0; i < fontSizeP.length; i++) {
+      if (fontSizeP[i].style.fontSize === "") {
+        fontSizeP[i].style.fontSize = "18px"
+        
+      } else if (fontSizeP[i].style.fontSize === "24px") {
+        fontSizeP[i].style.fontSize = "18px"
+        
+      } else if (fontSizeP[i].style.fontSize === "30px") {
+        fontSizeP[i].style.fontSize = "24px"
+         
+      } else if (fontSizeP[i].style.fontSize === "36px") {
+        fontSizeP[i].style.fontSize = "30px"
+      }
+    }
+  }
+
 
   render() {
     return (
       <Container>
         <footer>
           <Row>
-            <Col size="lg-4">
+            <Col size="lg-3">
               <div className="theme">
                 <button className="increase-size" onClick={this.handleClickIncrease}>+</button>
                   <p className="text-center">Zoom</p>
                 <button className="decrease-size" onClick={this.handleClickDecrease}>-</button>
               </div>
             </Col>
-            <Col size="lg-4">
+            <Col size="lg-3">
+              <div className="theme">
+                <button className="increase-size" onClick={this.handleFontIncrease}>+</button>
+                  <p className="text-center">Font Size</p>
+                <button className="decrease-size" onClick={this.handleFontDecrease}>-</button>
+              </div>
+            </Col>
+            <Col size="lg-3">
               <div className="theme">
                 <button className="increase-size" onClick={this.changeThemeDark}>Dark Mode</button>
                   <p className="text-center">Color Change</p>
                 <button className="decrease-size" onClick={this.revertDefault}>Default Layout</button>
               </div>
             </Col>
-            <Col size="lg-4">
+            <Col size="lg-3">
               <div className="theme">
                 <button className="increase-size" onClick={this.changeThemeLight}>Light Blue Theme</button>
                   <p className="text-center">Color Change</p>
