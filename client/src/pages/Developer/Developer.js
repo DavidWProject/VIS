@@ -38,6 +38,7 @@ const Developer = () => (
         <div className="card">
           <ol className="list-group list-group-flush text-center">
           <li className="list-group-item"><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google Accessibility Tool - Lighthouse</a></li>
+          <li className="list-group-item"><a href="https://www.youtube.com/watch?v=cOmehxAU_4s" target="_blank">Youtube Accessibility Demonstration</a></li>
           </ol>
       </div>
       </Col>

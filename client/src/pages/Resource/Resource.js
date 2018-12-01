@@ -25,6 +25,15 @@ const Resource = props => (
         <Col size="lg-12">
         <div className="card mt-3">
           <div className="card-body">
+          <h2 className="text-center"><a href="https://www.enhancedvision.com/grants-and-assistive-programs.html#Q1.3" target="_blank">Link to Government Assistance and Grants for the Visually Impaired</a></h2>
+          </div>
+        </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col size="lg-12">
+        <div className="card mt-3">
+          <div className="card-body">
           <h2 className="text-center"><a href="https://sandysview1.wordpress.com/2016/10/06/top-5-benefits-of-hiring-people-with-disabilities/" target="_blank">Top 5 Reasons why Employers should hire Visually Impaired Individuals</a></h2>
           </div>
         </div>
