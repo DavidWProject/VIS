@@ -5,13 +5,6 @@ import axios from 'axios';
 
 class Search extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         searchOption: ' ',
-    //     };
-    // }
-
     searchJob = (event) => {
         
         this.setState ({
@@ -25,31 +18,9 @@ class Search extends React.Component {
         // Number 13 is the "Enter" key on the keyboard
         if (event.keyCode === 13) {
 
-  
-
-            console.log(this.setState.search); 
+            // console.log(this.setState.search); 
             
-            // axios.get(`https://jobs.search.gov/jobs/search.json?query=nursing+jobs`)
-            // .then(res => {
-            // // Transform the raw data by extracting the nested posts
-            //     console.log(res.data);
-            //     // Update state to trigger a re-render.
-            //     // Clear any errors, and turn off the loading indiciator.
-            //     })
-            //     .catch(err => {
-            //     // Something went wrong. Save the error in state and re-render.
-            //     this.setState({
-            //         loading: false,
-            //         error: err
-            //     });
-            // })
-            // .catch(err => {
-            // // Something went wrong. Save the error in state and re-render.
-            //     this.setState({
-            //         loading: false,
-            //         error: err
-            //     });
-            // });
+            //adding functionality soon.
         }
  
     }
